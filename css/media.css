@@ -1,0 +1,30 @@
+/* navbar media */
+@media screen and (max-width: 992px) {
+  .my-navbar li a {
+    width: fit-content;
+  }
+  .my-navbar li a::before {
+    left: 1rem;
+  }
+  .my-navbar li a:hover::before {
+    width: calc(100% - 2rem);
+  }
+  .my-navbar li a.active::before {
+    left: 1rem;
+    width: calc(100% - 2rem);
+  }
+  .my-navbar li a.active:hover::before {
+    width: calc(100% - 2rem);
+  }
+}
+
+@media screen and (max-width:480px) {
+  header h1:after{
+
+  font-size: 40px;
+  
+  
+
+}
+}
+/* end navbar media */

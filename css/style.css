@@ -1,0 +1,628 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color: var(--main-paragraph-color);
+}
+html {
+  scroll-padding-top: 72px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fff;
+  border-left: 2px solid #eee;
+  box-shadow: 0px 0px 21px 0px #0003 inset;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+  border-radius: 100vh;
+}
+
+:root {
+  --main-section-bg: #f7f7f7;
+  --main-paragraph-color: #748182;
+}
+.bg-section {
+  background-color: var(--main-section-bg);
+}
+
+.main-title h3 {
+  font-weight: 900;
+}
+
+/* navbar */
+.my-flexgrow {
+  flex-grow: 0;
+}
+
+.my-navbar li a {
+  position: relative;
+  color: #000;
+}
+.my-navbar li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s all;
+}
+.my-navbar li a:hover::before {
+  width: calc(100% - 1rem);
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: unset;
+}
+.nav-link:hover {
+  color: #000;
+}
+.my-navbar li a.active {
+  position: relative;
+  font-weight: 600;
+}
+
+.my-navbar li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  width: calc(100% - 1rem);
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s all;
+}
+
+/* end navbar */
+/* section header */
+header {
+  background-image: linear-gradient(#000000af, #000000af), url(../imgs/bg.jpg);
+  background-size: cover;
+  padding-top: 56px;
+}
+header h6 {
+  font-size: 50px;
+  font-weight: 900;
+}
+header h1 {
+  position: relative;
+}
+header h1:after {
+  font-weight: 500;
+  font-size: 60px;
+  max-width: 400px;
+  letter-spacing: 1.5px;
+  content: " Mohamed Alaa |";
+  animation: typing 8s infinite linear alternate-reverse;
+}
+
+/*start animation typing */
+
+@keyframes typing {
+  0% {
+    content: " Mohamed Alaa |";
+  }
+  10% {
+    content: " Mohamed Alaa |";
+  }
+  11.2% {
+    content: " Mohamed Ala|";
+  }
+  12.4% {
+    content: " Mohamed Al|";
+  }
+  13.6% {
+    content: " Mohamed A|";
+  }
+  14.8% {
+    content: " Mohamed |";
+  }
+  16% {
+    content: " Mohamed|";
+  }
+  17.2% {
+    content: " Mohame|";
+  }
+  18.4% {
+    content: " Moham|";
+  }
+  19.6% {
+    content: " Moha|";
+  }
+  20.8% {
+    content: " Moh|";
+  }
+  22% {
+    content: " Mo|";
+  }
+  23.2% {
+    content: " M|";
+  }
+  24.4%,
+  68.2%,
+  97.4% {
+    content: " |";
+  }
+  35.6%,
+  67%,
+  69.4%,
+  96.2% {
+    content: " D|";
+  }
+  36.8%,
+  65.8%,
+  70.6%,
+  95% {
+    content: " De|";
+  }
+  38%,
+  64.6% {
+    content: " Dev|";
+  }
+  39.2%,
+  63.4% {
+    content: " Deve|";
+  }
+  40.4%,
+  62.2% {
+    content: " Devel|";
+  }
+  41.6%,
+  61% {
+    content: " Develo|";
+  }
+  42.8%,
+  59.8% {
+    content: " Develop|";
+  }
+  44%,
+  58.6% {
+    content: " Develope|";
+  }
+  45.2%,
+  56.4% {
+    content: " Developer|";
+  }
+  55.2% {
+    content: " Developer|";
+  }
+
+  71.8%,
+  93.8% {
+    content: " Des|";
+  }
+  73%,
+  92.6% {
+    content: " Desi|";
+  }
+  74.2%,
+  91.4% {
+    content: " Desig|";
+  }
+  75.4%,
+  90.2% {
+    content: " Design|";
+  }
+  76.6%,
+  89% {
+    content: " Designe|";
+  }
+  77.8%,
+  87.8% {
+    content: " Designer|";
+  }
+}
+/*end animation typing */
+.my-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.my-list li a i {
+  font-size: 15px;
+  color: #fff;
+  transition: 0.3s color;
+}
+.my-list li:first-child a:hover > i {
+  color: #4267b2;
+}
+.my-list li:nth-child(2) a:hover > i {
+  color: #1da1f2;
+}
+.my-list li:nth-child(3) a:hover > i {
+  color: #1da1f2;
+}
+.my-list li:nth-child(4) a:hover > i {
+  color: #053eff;
+}
+.my-list li:nth-child(5) a:hover > i {
+  color: #ff0000;
+}
+/* end section header */
+
+/* section about */
+
+/* progress bar */
+
+.progress-bar {
+  background-color: #1c1c1c;
+}
+.progress {
+  --bs-progress-height: 1.5625rem;
+  --bs-progress-font-size: 0.6rem;
+  --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+  --bs-progress-bar-color: #fff;
+  --bs-progress-bar-bg: #0d6efd;
+  --bs-progress-bar-transition: width 0.6s ease;
+  display: flex;
+  height: var(--bs-progress-height);
+  overflow: hidden;
+  font-size: var(--bs-progress-font-size);
+  background-color: var(--bs-progress-bg);
+  border-radius: var(--bs-progress-border-radius);
+}
+/* end progress bar */
+
+/* buttons sec about */
+
+.btns-about a:first-child {
+  background-color: #1c1c1c;
+  font-size: 0.875rem;
+  color: #fff;
+  border: 1px solid #1c1c1c;
+  transition: 0.3s all;
+  padding: 11px 22px;
+}
+.btns-about a:first-child:hover {
+  background-color: #fff;
+  font-size: 0.875rem;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+}
+.btns-about a:nth-child(2) {
+  color: #1c1c1c;
+  background-color: #fff;
+  font-size: 0.875rem;
+  border: 1px solid #1c1c1c;
+  transition: 0.3s all;
+  padding: 11px 22px;
+}
+.btns-about a:nth-child(2):hover {
+  color: #fff;
+  background-color: #1c1c1c;
+  font-size: 0.875rem;
+  border: 1px solid #1c1c1c;
+}
+
+/*end buttons sec about */
+
+/*end section about */
+
+/* start section services */
+
+.main-title h3 {
+  width: fit-content;
+}
+.main-title h3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+}
+
+.service-icn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  transition: 0.5s all;
+}
+.service-icn i {
+  transition: 0.7s all;
+}
+.services-row-card .inner {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.services-row-card .inner p {
+  font-size: 14px;
+}
+.services-row-card:hover .service-icn {
+  background-color: #1c1c1c;
+}
+.services-row-card:hover .service-icn i {
+  color: #fff;
+}
+/* end start section services */
+
+/* start portfolio */
+
+.card-of-myrow-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: #ffffff00;
+  transform: translateY(20px);
+  transition: 0.8s all;
+}
+.card-of-myrow-overlay h6 {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: 0.8s all;
+}
+
+.myrow-card-icns a {
+  text-decoration: none;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  border: 1px solid #1c1c1c;
+  opacity: 0;
+  transition: 0.8s all;
+  transform: translateY(10px);
+}
+
+.card-of-myrow:hover .card-of-myrow-overlay {
+  background-color: #ffffffe5;
+  transform: translateY(0px);
+}
+.card-of-myrow:hover .card-of-myrow-overlay h6 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card-of-myrow:hover .myrow-card-icns a {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.myrow-card-icns a i {
+  font-size: 14px;
+}
+
+.myrow-card-icns a:hover {
+  color: #1c1c1c;
+  background-color: #fff;
+}
+
+/* styling ul in portfoli */
+
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: #000;
+  --bs-nav-pills-link-active-bg: unset;
+}
+
+/* styling ul in portfoli */
+
+.my-port-nav li .my-btn-porto::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #1c1c1c;
+  bottom: 0;
+  left: 1rem;
+  transition: 0.3s all;
+}
+.my-port-nav li .my-btn-porto:visited:before {
+  width: calc(100% - 2rem);
+}
+
+.my-port-nav li button.active::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 2rem);
+  height: 3px;
+  background-color: #1c1c1c;
+  bottom: 0;
+  left: 1rem;
+}
+
+/* end portfolio */
+
+/* carousel */
+.my-carousel img {
+  width: 100px;
+}
+
+.my-carousel p {
+  font-size: 14px;
+  max-width: 700px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  background-color: #d6d6d6;
+  border-radius: 50%;
+}
+.carousel-indicators button.active {
+  background-color: #869791;
+}
+/* carousel */
+
+/*start section counter numbers */
+.my-box h2 {
+  font-weight: 900;
+}
+
+/*end section counter numbers */
+
+/* start our work */
+.card-body {
+  background-color: #5b5b5b;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card {
+  --bs-card-border-radius: 0;
+}
+
+.our-work-card .card .overlay {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  left: 10px;
+  top: 10px;
+  background-color: #fffffff0;
+}
+
+.img-for-overlay .overlay .my-list li a {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #1c1c1c;
+  transition: 0.3s all;
+}
+.img-for-overlay .overlay .my-list li a:hover {
+  background-color: #fff;
+}
+.img-for-overlay .overlay .my-list li:nth-child(3) a:hover i {
+  color: #e60023;
+}
+
+.card img {
+  transition: 0.3s all;
+}
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.img-for-overlay .overlay {
+  transform: scale(0.5);
+  transition: 0.5s all;
+  opacity: 0;
+}
+.card:hover .img-for-overlay .overlay {
+  transform: scale(1) rotateY(180deg);
+  opacity: 1;
+}
+.card .img-for-overlay .overlay ul {
+  opacity: 0;
+}
+.card:hover .img-for-overlay .overlay ul {
+  transform: rotateY(180deg);
+  opacity: 1;
+}
+/* end our work */
+
+/* start contact  */
+.contact-icn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  transition: 0.3s all;
+}
+.contact-icn:hover {
+  background-color: #1c1c1c;
+}
+.contact-icn:hover i {
+  color: #fff;
+}
+.contact-icn i {
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.contact-box a {
+  color: var(--main-paragraph-color);
+}
+
+textarea {
+  height: 150px;
+  max-height: 150px;
+}
+
+.my-submit {
+  background-color: #1c1c1c;
+  font-size: 0.875rem;
+  color: #fff;
+  border: 1px solid #1c1c1c;
+  transition: 0.3s all;
+  padding: 11px 22px;
+}
+.my-submit:hover {
+  background-color: #fff;
+
+  color: #1c1c1c;
+}
+
+.form-control {
+  color: var(--main-paragraph-color);
+  background-color: #f4f4f4;
+  border: none;
+}
+
+.form-control:focus {
+  color: var(--main-paragraph-color);
+  background-color: #f4f4f4;
+  border-color: none;
+  outline: 0;
+  box-shadow: unset;
+}
+/* end contact  */
+
+/* start footer */
+footer {
+  background-color: #1c1c1c;
+}
+footer p {
+  font-size: 13px;
+}
+/* end footer */
